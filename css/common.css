@@ -1,0 +1,66 @@
+body[data-mode="dark"]{
+    --mode-bodybg: #333;
+    --mode-textcolor: #fff;
+    --mode-alttextcolor: #111;
+    --mode-shadow: rgba(0,0,0,0.5);
+    --mode-glass: rgba(33, 33, 33, 0.285);
+
+    --bgimg: url('../images/hero_dark.png');
+}
+body:not([data-mode="dark"]){
+    --mode-bodybg: snow;
+    --mode-textcolor: #111;
+    --mode-alttextcolor: #fff;
+    --mode-shadow: rgba(120,120,120,0.5);
+    --mode-glass: rgba(173, 173, 173, 0.532);
+
+    --bgimg: url('../images/hero_light.png');
+}
+body{
+    --themecolor: rgb(0.255,19.125,204);
+    --bodybg: var(--mode-bodybg);
+    --textcolor: var(--mode-textcolor);
+    --alttextcolor: var(--mode-alttextcolor);
+    --roundness: 12px;
+    --shadowcolor: var(--mode-shadow);
+    --glass: var(--mode-glass);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* reusables */
+    .mybtn{
+        display: inline-block;
+        border: none;
+        background-color: var(--themecolor);
+        color: var(--textcolor);
+        padding: 12px 16px;
+        border-radius: var(--roundness);
+    }
+    .mybtn:hover{
+        scale: 1.1;
+        box-shadow: 0 0 16px var(--themecolor);
+    }
+    .hed{
+        font-weight: 900;
+    }
+    .cta{
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        color: var(--textcolor) !important;
+        padding: 16px 24px;
+        margin: 16px 12px;
+        border-radius: var(--roundness);
+        border: 2px solid var(--themecolor);
+    }
+    .cta.active{
+        background-color: var(--themecolor);
+        color: var(--textcolor);
+        border: none;
+    }
+    .cta:hover{
+        background-color: var(--themecolor);
+        scale: 1.1;
+    }
