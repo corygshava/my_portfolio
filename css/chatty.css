@@ -1,0 +1,45 @@
+.testimonial-card {
+    flex: 0 0 300px;
+    padding: 24px;
+    border-radius: 16px;
+    color: var(--textcolor);
+    box-shadow: 0 4px 20px rgba(108, 108, 110, 0.652);
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    /* background-color: var(--conbg); */
+    /* background-image: linear-gradient(80deg,var(--themecolor),transparent); */
+    /* margin: 20px auto; */
+}
+
+.rating {
+    font-size: 20px;
+    color: #facc15; /* Gold star color */
+    margin-bottom: 12px;
+}
+
+.thetext {
+    font-size: 16px;
+    color: var(--textcolor);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.client-info img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e5e7eb;
+}
+
+.thename {
+    font-weight: 600;
+    color: var(--textcolor);
+}

@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Cory G Shava: portfolio [updated]</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cory G Shava: portfolio [updated]</title>
 
-		<link rel="stylesheet" href="css/common.css">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/w3.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/chatty.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/s-autoform.css">
+	<link rel="stylesheet" href="css/animations.css">
+
+	<script src="js/SuperScript.js"></script>
+	<script src="js/toappend.js"></script>
 </head>
 <body data-mode="dark">
-	<nav>
+	<nav id="navbar">
 		<div class="navitems">
-			<div class="logo">Cory G</div>
-			<div class="items">
+			<div class="logo">
+				<div id="myname">
+					<span>Cornelius</span>
+					<b>Shava</b>
+				</div>
+			</div>
+			<div class="items w3-hide-small menulinks">
 				<a href="#about">About</a>
+				<a href="#skillset">skills</a>
 				<a href="#projects">Projects</a>
-				<a href="#skillset">Skillset</a>
+				<a href="#contacts">Contacts</a>
 			</div>
 			<div>
-				<a class="mybtn" href="#contact">lets talk</a>
+				<a class="mybtn" href="#contacts"><i class="fa fa-phone"></i> <span class="w3-hide-small">lets talk</span></a>
+			</div>
+			<div class="w3-hide-large w3-hide-medium w3-hide">
+				<a class="mybtn w3-transparent" href="#"><i class="fa fa-bars"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -28,7 +43,7 @@
 	<div class="hero">
 		<div class="items">
 			<div class="herotxt">
-				<span class="hed">Building Digital solutions <br> since 2019</span>
+				<span class="hed">Building Digital solutions <br> <!--since 2019--></span>
 				<!-- <span class="hed">Build, Launch, Inspire</span> -->
 				<p>Full stack developer specialising in building beautiful, user-focused websites and interfaces</p>
 				<a href="#about" class="cta active">About me</a>
@@ -39,16 +54,243 @@
 	</div>
 
 	<div class="content">
-		<div id="about">
-			<div class="section">
+		<div id="about" class="section pageitem">
+			<span class="hed2">About me</span>
+			<span class="hint">Who am I and how can I build you</span>
+			<div class="myrow">
+				<div class="mycol w3-center">
+					<div class="imgholder">
+						<img src="images/me_2.jpg" alt="personal picture 1" class="myimg t1 profile">
+						<!-- <img src="images/me_1.jpg" alt="personal picture 1" class="myimg t1 uniqueimg"> -->
+					</div>
+				</div>
+				<div class="mycol bodytext centertxt halfpage spacy">
+					<p>
+						I am <b class="">Cornelius Shava</b> a web developer with more than half a decade of experience in website design.
+						I specialise in creating elegant websites, User interfaces, micro-interactions and underlying systems to deliver
+						the best possible result for any kind of client
+					</p>
+					<div class="btns">
+						<a href="#contacts" class="cta active">get in touch</a>
+						<a href="#projects" class="cta active">projects</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="skillset" class="section pageitem darkerbg">
+			<span class="hed2">My skills</span>
+			<span class="hint">my main toolbox</span>
+			<div class="skillsbox">
+				<div class="skill">
+					<img src="images/skill_1.png" alt="html icon">
+					<span class="subtxt">HTML</span>
+				</div>
+				<div class="skill">
+					<img src="images/skill_2.png" alt="css icon">
+					<span class="subtxt">CSS</span>
+				</div>
+				<div class="skill">
+					<img src="images/skill_3.jpg" alt="JS icon">
+					<span class="subtxt">Javascript</span>
+				</div>
+				<div class="skill">
+					<img src="images/skill_4.png" alt="php icon">
+					<span class="subtxt">PHP</span>
+				</div>
+				<div class="skill">
+					<img src="images/skill_5.png" alt="sql icon">
+					<span class="subtxt">SQL</span>
+				</div>
+			</div>
+			<span class="hint">secondary</span>
+			<div class="skillsbox">
+				<div class="skill">
+					<img src="images/skill_6.png" alt="react icon" class="w3-circle">
+					<span class="subtxt">Nodejs</span>
+				</div>
+				<div class="skill">
+					<img src="images/skill_7.png" alt="sql icon">
+					<span class="subtxt">react</span>
+				</div>
+				<div class="skill">
+					<img src="images/skill_8.png" alt="sql icon">
+					<span class="subtxt">System design</span>
+				</div>
+				<div class="skill">
+					<img src="images/skill_9.png" alt="sql icon">
+					<span class="subtxt">Wordpress</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="projects" class="section pageitem">
+			<span class="hed2">Featured projects</span>
+			<!-- <span class="hint">what works have I done</span> -->
+			<h3 class="hint">complete</h3>
+			<div class="projectsbox">
+				<div class="project">
+					<img src="images/project_1.png" alt="project 2 image" class="theimg">
+					<div class="caption">
+						<div class="pname">Uploader premium</div>
+						<a href="http://haoselkenya.com/pjs/cfw/uploader-premium/" class="themebtn">visit</a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="images/project_5.png" alt="project 3 image" class="theimg">
+					<div class="caption">
+						<div class="pname">Foodacious</div>
+						<a target="_blank" href="/foodacious/" class="themebtn">visit</a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="images/project_6.png" alt="project 3 image" class="theimg">
+					<div class="caption">
+						<div class="pname">Ziga E-commerce</div>
+						<a target="_blank" href="http://localhost/wp/" class="themebtn">visit</a>
+					</div>
+				</div>
+			</div>
+			<h3 class="hint">Prototypes</h3>
+			<div class="projectsbox">
+				<div class="project">
+					<img src="images/project_3.png" alt="project 1 image" class="theimg">
+					<div class="caption">
+						<div class="pname">consultancy website</div>
+						<a target="_blank" href="/consultancy/" class="themebtn">visit</a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="images/project_2.png" alt="project 3 image" class="theimg">
+					<div class="caption">
+						<div class="pname">Thamani finance web app</div>
+						<a target="_blank" href="https://v0-thamani-web-app.vercel.app/" class="themebtn">visit</a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="images/project_4.png" alt="project 3 image" class="theimg">
+					<div class="caption">
+						<div class="pname">Upload manager prototype</div>
+						<a target="_blank" href="https://v0-simple-upload-manager.vercel.app/" class="themebtn">visit</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="testimony" class="section w3-hide">
+			<span class="hed2">Testimonials</span>
+			<span class="hint">What do my clients say</span>
+			<div class="testimonybox">
+				<div class="testimonial-card">
+					<div class="w3-hide rating">★★★★★</div>
+					<p class="thetext">Working with this developer was a breeze. They delivered a fast, responsive site that boosted our user engagement from day one.</p>
+					<div class="client-info">
+						<img src="images/client_1.jpg" alt="Client photo of Sarah Jenkins">
+						<span class="thename">Sarah Jenkins, Startup Founder</span>
+					</div>
+				</div>				
+				<div class="testimonial-card">
+					<div class="w3-hide rating">★★★★★</div>
+					<p class="thetext">Working with this developer was a breeze. They delivered a fast, responsive site that boosted our user engagement from day one.</p>
+					<div class="client-info">
+						<img src="images/client_1.jpg" alt="Client photo of Sarah Jenkins">
+						<span class="thename">Sarah Jenkins, Startup Founder</span>
+					</div>
+				</div>				
+				<div class="testimonial-card">
+					<div class="w3-hide rating">★★★★★</div>
+					<p class="thetext">Working with this developer was a breeze. They delivered a fast, responsive site that boosted our user engagement from day one.</p>
+					<div class="client-info">
+						<img src="images/client_1.jpg" alt="Client photo of Sarah Jenkins">
+						<span class="thename">Sarah Jenkins, Startup Founder</span>
+					</div>
+				</div>				
+				
+				<div class="thecontrols w3-hide">
+					<button class="rightbtn"><i class="fa fa-arrow-left"></i></button>
+					<button class="leftbtn"><i class="fa fa-arrow-right"></i></button>
+				</div>
+			</div>
+		</div>
+
+		<div id="contacts" class="section pageitem">
+			<span class="hed2">contacts</span>
+			<span class="hint">how do you reach me</span>
+			<div class="contactsbox">
+				<a target="_blank" href="tel://+254754079047" class="contact">
+					<span class="icon"><i class="fa fa-phone"></i></span>
+					<span class="caption">call me</span>
+				</a>
+				<a target="_blank" href="https://wa.me/254754079047" class="contact">
+					<span class="icon"><i class="fa fa-whatsapp"></i></span>
+					<span class="caption">whatsapp me</span>
+				</a>
+				<a target="_blank" href="https://github.com/corygshava" class="contact">
+					<span class="icon"><i class="fa fa-github"></i></span>
+					<span class="caption">my github</span>
+				</a>
+				<a href="#contacts" class="contact" onclick="toggleShowB('#feedbackmodal','flex','none')">
+					<span class="icon"><i class="fa fa-send"></i></span>
+					<span class="caption">leave a message</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="log_guy"></div>
+
+	<div class="popups">
+		<div class="smallmenu w3-hide-large w3-hide-medium">
+			<div class="temper menulinks" id="phonemenu">
+				<a href="#about">About</a>
+				<a href="#skillset">skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#contacts">Contacts</a>
+			</div>
+			<a class="themebg" id="menubtn" data-clicked="0"><i class="fa fa-bars"></i></a>
+		</div>
+		<div class="mymodal w3-hide">
+			<div class="modal-content">
 				<div class="myrow">
 					<div class="mycol">
-						<img src="images/me_2.jpg" alt="personal picture 1" class="myimg">
+						<img src="images/project_1.png" alt="selected product image">
 					</div>
-					<div class="mycol"></div>
+					<div class="mycol">
+						<h2>product title</h2>
+						<span class="content">
+							short description
+						</span>
+						<a href="#" class="cta">visit</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="mymodal showup" id="feedbackmodal" data-shown="0">
+		<div class="modal-content">
+			<button class="w3-btn w3-right" onclick="toggleShowB('#feedbackmodal','flex','none')"><i class="fa fa-times"></i></button>
+			<h1 class="w3-center">Send a note</h1>
+			<hr>
+			<form action="actions/addfeedback.php" class="s-autoform-2">
+				<div class="input-holder">
+					<label for="email">Email</label>
+					<input type="email" name="theemail" id="email" placeholder="enter email here">
+				</div>
+				<div class="input-holder">
+					<label for="subject">Subject</label>
+					<input type="text" name="thesubject" id="subject" placeholder="reason for writing" required>
+				</div>
+				<div class="input-holder">
+					<label for="msg">message</label>
+					<textarea name="themsg" id="msg" rows="3" placeholder="your message" required></textarea>
+				</div>
+				<div class="input-holder">
+					<button class="themebtn themebg"><i class="fa fa-send"></i> send message</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
 </body>
 </html>

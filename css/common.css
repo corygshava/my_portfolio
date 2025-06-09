@@ -1,7 +1,9 @@
 body[data-mode="dark"]{
-    --mode-bodybg: #333;
+    --mode-bodybg: #161619;
     --mode-textcolor: #fff;
     --mode-alttextcolor: #111;
+    --mode-darkerbg: #222;
+    --mode-conbg: #444;
     --mode-shadow: rgba(0,0,0,0.5);
     --mode-glass: rgba(33, 33, 33, 0.285);
 
@@ -11,6 +13,8 @@ body:not([data-mode="dark"]){
     --mode-bodybg: snow;
     --mode-textcolor: #111;
     --mode-alttextcolor: #fff;
+    --mode-darkerbg: #eee;
+    --mode-conbg: #fefefe;
     --mode-shadow: rgba(120,120,120,0.5);
     --mode-glass: rgba(173, 173, 173, 0.532);
 
@@ -18,16 +22,34 @@ body:not([data-mode="dark"]){
 }
 body{
     --themecolor: rgb(0.255,19.125,204);
+    --darkaccent: #224434;
     --bodybg: var(--mode-bodybg);
     --textcolor: var(--mode-textcolor);
     --alttextcolor: var(--mode-alttextcolor);
-    --roundness: 12px;
+    --darkerbg: var(--mode-darkerbg);
+    --conbg: var(--mode-conbg);
     --shadowcolor: var(--mode-shadow);
     --glass: var(--mode-glass);
+    
+    --roundness: 24px;
+    --pagewidth: 1280px;
 }
 html{
     scroll-behavior: smooth;
 }
+
+/* misc */
+    .spacy{
+        padding:16px;
+    }
+    
+    .myimg.t1{
+        width: 80%;
+        border-radius: 24px;
+    }
+    .bodytext{
+        font-size: 1.2rem;;
+    }
 
 /* reusables */
     .mybtn{
@@ -44,6 +66,22 @@ html{
     }
     .hed{
         font-weight: 900;
+    }
+    .hed2{
+        font-size: 1.75rem;
+        font-weight: 900;
+        display: block;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 16px;
+    }
+    .hint{
+        font-size: 0.75rem;
+        display: block;
+        text-align: center;
+        padding: 12px;
+        text-transform: uppercase;
+        letter-spacing: 7px;
     }
     .cta{
         display: inline-block;
@@ -63,4 +101,48 @@ html{
     .cta:hover{
         background-color: var(--themecolor);
         scale: 1.1;
+    }
+    .themetxt{
+        color: var(--themecolor);
+    }
+    .themebtn{
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: var(--themecolor);
+        border-radius: var(--roundness);
+        margin-top: 8px;
+    }
+    .themebtn:hover{
+        filter: brightness(200%);
+        box-shadow: 0 0 12px var(--themecolor);
+    }
+    .themebg{
+        background-color: var(--themecolor) !important;
+    }
+
+    .centertxt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .halfpage{
+        min-height: 50vh;
+    }
+    .darkerbg{
+        background-color: var(--darkerbg);
+    }
+
+    .heightbox{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        background-color: red;
+    }
+
+    #log_guy{
+        padding: 24px 32px;
     }
