@@ -1,6 +1,7 @@
 // let links = undefined;
 let heightbox = undefined;
 // let navbar = undefined;
+let myskills = [];
 
 window.addEventListener('scroll', e => {
     // change up the navbar
@@ -32,16 +33,18 @@ window.addEventListener('scroll', e => {
         let links = el.querySelectorAll('a');
 
         links.forEach(lnk => {
-            let thelink = lnk.dataset.mylink.split("#")[1];
+            if(lnk.dataset.mylink != undefined){
+                let thelink = lnk.dataset.mylink.split("#")[1];
 
-            if (thelink == `${theid}`) {
-                lnk.classList.add('active');
-                // lnk.classList.add('w3-white');
-            } else {
-                lnk.classList.remove('active');
-                // lnk.classList.remove('w3-white');
+                if (thelink == `${theid}`) {
+                    lnk.classList.add('active');
+                    // lnk.classList.add('w3-white');
+                } else {
+                    lnk.classList.remove('active');
+                    // lnk.classList.remove('w3-white');
+                }
+                console.log(`checking link ${theid} vs ${thelink}`);
             }
-            console.log(`checking link ${theid} vs ${thelink}`);
         })
     })
 })
@@ -67,7 +70,25 @@ function mekExtras() {
 }
 
 function mekVars() {
-    // UI variables
+    myskills = [
+        {
+            category : "myprojects", 
+            title: "uploader premium",
+            link: "http://haoselkenya.com/pjs/cfw/uploader-premium/",
+            img: "images/project_1.png",
+            desc: "an upload manager i made to hold my editing projects plus as an online backup for som e of my files",
+            tech: "html,css,js,php,json",
+            client: "personal project"
+        },{
+            category : "myprojects", 
+            title: "Foodacious",
+            link: "http://haoselkenya.com/pjs/cfw/uploader-premium/",
+            img: "images/project_5.png",
+            desc: "a wordpress e-commerce site i made to figure out selling and buying stuff online",
+            tech: "html,css,js,php,json,wordpress",
+            client: "personal project"
+        }
+    ]
 }
 
 function mekEvents() {
@@ -87,5 +108,19 @@ function mekEvents() {
         } else {
             phonemenu.classList.add("showme");
         }
+    })
+
+    let skills = document.querySelectorAll('.skill');
+
+    skills.forEach(el => {
+        el.addEventListener('click',e => {
+            toggleShowB('#infomodal','flex','none');
+
+            let hed = infomodal.querySelector('h1');
+            let par = infomodal.querySelector('p');
+
+            hed.innerHTML = el.querySelector('.subtxt').innerHTML;
+            par.innerHTML = el.querySelector('.mydata').innerHTML;
+        })
     })
 }

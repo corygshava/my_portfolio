@@ -191,6 +191,7 @@ nav a.active{
     overflow: hidden;
 }
 .skillsbox .skill::before{
+    pointer-events: none;
     content: "";
     position: absolute;
     top: 0;
@@ -358,6 +359,9 @@ nav a.active{
 	align-items: center;
 	justify-content: center;
     z-index: 10;
+}
+.mymodal.trans{
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .mymodal .modal-content{
 	padding: 24px 32px;

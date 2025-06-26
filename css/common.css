@@ -50,6 +50,13 @@ html{
     .bodytext{
         font-size: 1.2rem;;
     }
+    .flex-center{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
 /* reusables */
     .mybtn{
