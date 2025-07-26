@@ -43,3 +43,38 @@
     font-weight: 600;
     color: var(--textcolor);
 }
+
+/* tables */
+table {
+    width: 96%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #333;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #007acc;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+}
+tbody tr{
+    border-bottom: 1px solid grey;
+}
+tbody tr {
+    background-color: #111;
+}
+
+tbody tr:hover {
+    background-color: #333;
+}
+
+th {
+    font-weight: 600;
+}

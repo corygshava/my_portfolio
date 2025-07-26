@@ -22,6 +22,7 @@ body:not([data-mode="dark"]){
 }
 body{
     --themecolor: rgb(0.255,19.125,204);
+    --seccolor: orange;
     --darkaccent: #224434;
     --bodybg: var(--mode-bodybg);
     --textcolor: var(--mode-textcolor);
@@ -49,6 +50,13 @@ html{
     }
     .bodytext{
         font-size: 1.2rem;;
+    }
+    .flex-center{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
 /* reusables */

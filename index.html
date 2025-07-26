@@ -15,6 +15,7 @@
 
 	<script src="js/SuperScript.js"></script>
 	<script src="js/toappend.js"></script>
+	<script src="js/datas.js"></script>
 </head>
 <body data-mode="dark">
 	<nav id="navbar">
@@ -81,45 +82,81 @@
 		<div id="skillset" class="section pageitem darkerbg">
 			<span class="hed2">My skills</span>
 			<span class="hint">my main toolbox</span>
-			<div class="skillsbox">
+			<div class="hintpanel w3-hide-small w3-hide-medium" id="hintpanel1" data-shown="1">
+				<div>the one highlighted is my proficiency level</div>
+				<div>
+					<button class="w3-btn" onclick="toggleShow('#hintpanel1')"><i class="fa fa-times"></i></button>
+				</div>
+			</div>
+			<div class="skillsbox" id="skills_main">
 				<div class="skill">
 					<img src="images/skill_1.png" alt="html icon">
 					<span class="subtxt">HTML</span>
+					<div class="mydata w3-hide">
+						HTML provides the foundational structure of web pages by defining elements displayed on the page. It is essential for all web development and works in tandem with CSS and JavaScript to create functional and visually appealing websites.
+					</div>
 				</div>
 				<div class="skill">
 					<img src="images/skill_2.png" alt="css icon">
 					<span class="subtxt">CSS</span>
+					<div class="mydata w3-hide">
+						CSS enables developers to separate content from design, allowing for responsive, visually engaging user interfaces. Features like Flexbox, Grid, animations, and media queries empower modern web styling across devices.
+					</div>
 				</div>
 				<div class="skill">
+					<div class="skilllvl">
+						Proficient
+					</div>
 					<img src="images/skill_3.jpg" alt="JS icon">
 					<span class="subtxt">Javascript</span>
+					<div class="mydata w3-hide">
+						JavaScript brings interactivity to websites by manipulating the DOM, handling events, and enabling asynchronous communication (AJAX). It powers dynamic features like form validation, animations, and real-time updates, and is also widely used on the server-side via Node.js.
+					</div>
 				</div>
 				<div class="skill">
 					<img src="images/skill_4.png" alt="php icon">
 					<span class="subtxt">PHP</span>
+					<div class="mydata w3-hide">
+						PHP is used to generate dynamic page content, handle form submissions, manage sessions, and interact with databases. It integrates seamlessly with HTML and powers popular platforms like WordPress, making it a staple for backend web development.
+					</div>
 				</div>
 				<div class="skill">
 					<img src="images/skill_5.png" alt="sql icon">
 					<span class="subtxt">SQL</span>
+					<div class="mydata w3-hide">
+						SQL is used to query, update, and manage data stored in database systems like MySQL, PostgreSQL, and SQL Server. It allows developers to retrieve insights, build reports, and maintain structured data efficiently.
+					</div>
 				</div>
 			</div>
 			<span class="hint">secondary</span>
-			<div class="skillsbox">
+			<div class="skillsbox" id="skills_sec">
 				<div class="skill">
 					<img src="images/skill_6.png" alt="react icon" class="w3-circle">
 					<span class="subtxt">Nodejs</span>
+					<div class="mydata w3-hide">
+						Node.js enables developers to use JavaScript on the server side, allowing for full-stack development using a single language. It's particularly well-suited for building APIs, real-time applications, and microservices due to its non-blocking, event-driven architecture.
+					</div>
 				</div>
 				<div class="skill">
 					<img src="images/skill_7.png" alt="sql icon">
 					<span class="subtxt">react</span>
+					<div class="mydata w3-hide">
+						Developed and maintained by Facebook, React allows developers to build reusable UI components and manage complex application states efficiently using a virtual DOM. It is widely used for creating fast, interactive front-end experiences.
+					</div>
 				</div>
 				<div class="skill">
 					<img src="images/skill_8.png" alt="sql icon">
 					<span class="subtxt">System design</span>
+					<div class="mydata w3-hide">
+						System design ensures that applications are scalable, maintainable, and performant. It involves understanding requirements, selecting appropriate technologies, designing databases, and planning interactions between different parts of a system to meet both current and future needs.
+					</div>
 				</div>
 				<div class="skill">
 					<img src="images/skill_9.png" alt="sql icon">
 					<span class="subtxt">Wordpress</span>
+					<div class="mydata w3-hide">
+						WordPress provides a user-friendly interface for creating blogs, business sites, portfolios, and e-commerce platforms. It supports themes for design customization and plugins for extended functionality, making it a popular choice for both developers and non-technical users.
+					</div>
 				</div>
 			</div>
 		</div>
@@ -128,52 +165,14 @@
 			<span class="hed2">Featured projects</span>
 			<!-- <span class="hint">what works have I done</span> -->
 			<h3 class="hint">complete</h3>
-			<div class="projectsbox">
-				<div class="project">
-					<img src="images/project_1.png" alt="project 2 image" class="theimg">
-					<div class="caption">
-						<div class="pname">Uploader premium</div>
-						<a href="http://haoselkenya.com/pjs/cfw/uploader-premium/" class="themebtn">visit</a>
-					</div>
-				</div>
-				<div class="project">
-					<img src="images/project_5.png" alt="project 3 image" class="theimg">
-					<div class="caption">
-						<div class="pname">Foodacious</div>
-						<a target="_blank" href="/foodacious/" class="themebtn">visit</a>
-					</div>
-				</div>
-				<div class="project">
-					<img src="images/project_6.png" alt="project 3 image" class="theimg">
-					<div class="caption">
-						<div class="pname">Ziga E-commerce</div>
-						<a target="_blank" href="http://localhost/wp/" class="themebtn">visit</a>
-					</div>
-				</div>
+			<div class="projectsbox" id="doneprojos">
 			</div>
 			<h3 class="hint">Prototypes</h3>
-			<div class="projectsbox">
-				<div class="project">
-					<img src="images/project_3.png" alt="project 1 image" class="theimg">
-					<div class="caption">
-						<div class="pname">consultancy website</div>
-						<a target="_blank" href="/consultancy/" class="themebtn">visit</a>
-					</div>
-				</div>
-				<div class="project">
-					<img src="images/project_2.png" alt="project 3 image" class="theimg">
-					<div class="caption">
-						<div class="pname">Thamani finance web app</div>
-						<a target="_blank" href="https://v0-thamani-web-app.vercel.app/" class="themebtn">visit</a>
-					</div>
-				</div>
-				<div class="project">
-					<img src="images/project_4.png" alt="project 3 image" class="theimg">
-					<div class="caption">
-						<div class="pname">Upload manager prototype</div>
-						<a target="_blank" href="https://v0-simple-upload-manager.vercel.app/" class="themebtn">visit</a>
-					</div>
-				</div>
+			<div class="projectsbox" id="ongoingprojos">
+			</div>
+
+			<div class="spacy w3-center">
+				<a class="themebtn" onclick="toggleShowB('#projectsmodal','flex','none')">view all</a>
 			</div>
 		</div>
 
@@ -266,12 +265,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="mymodal showup" id="feedbackmodal" data-shown="0">
+
+	<div class="mymodal showup trans" id="feedbackmodal" data-shown="0">
 		<div class="modal-content">
 			<button class="w3-btn w3-right" onclick="toggleShowB('#feedbackmodal','flex','none')"><i class="fa fa-times"></i></button>
 			<h1 class="w3-center">Send a note</h1>
 			<hr>
-			<form action="actions/addfeedback.php" class="s-autoform-2">
+			<form action="feedback_system/addfeedback.php" class="s-autoform-2" method="post">
 				<div class="input-holder">
 					<label for="email">Email</label>
 					<input type="email" name="theemail" id="email" placeholder="enter email here">
@@ -288,6 +288,35 @@
 					<button class="themebtn themebg"><i class="fa fa-send"></i> send message</button>
 				</div>
 			</form>
+		</div>
+	</div>
+
+	<div class="mymodal showup trans" id="infomodal" data-shown="0" onclick="toggleShowB('#infomodal','flex','none')">
+		<div class="modal-content">
+			<button class="w3-btn w3-right"><i class="fa fa-times"></i></button>
+			<h1 class="w3-center">Send a note</h1>
+			<hr>
+			<p>what is this skill</p>
+		</div>
+	</div>
+
+	<div class="mymodal showup trans" id="projectsmodal" data-shown="0">
+		<div class="modal-content" style="max-width: 1200px;width:90%;">
+			<button class="w3-btn w3-right" onclick="toggleShowB('#projectsmodal','flex','none')"><i class="fa fa-times"></i></button>
+			<h1 class="w3-center">All projects</h1>
+			<hr>
+			<div id="tehtable">
+			</div>
+		</div>
+	</div>
+
+	<div class="mymodal showup trans" id="deetsmodal" data-shown="0">
+		<button class="w3-btn w3-right" onclick="toggleShowB('#deetsmodal','flex','none')"><i class="fa fa-times"></i></button>
+		<div class="modal-content flex-center">
+			<div class="skillsrow flex-center">
+				<div class="imgpart"></div>
+				<div class="caption"></div>
+			</div>
 		</div>
 	</div>
 
