@@ -2,10 +2,11 @@
 	// default data
 	$default_name = "visitor";		// who sent the feedback, you can add an input with the name alias to ignore this
 	$default_subject = "feedback";		// who sent the feedback, you can add an input with the name alias to ignore this
+
 	$heading = "Feedback not recorded";	// the heading for the message
 	$outTxt = "started running";	// no need to change
 	$success_message = "feedback recorded i'll get back to you if necessary"; // what will be shown if it works
-	$backpage = "";		// where to go back to
+	$backpage = "";					// where to go back to
 	$showMessage = true;			// change to false if you want it to be instant
 
 	// feedback data
@@ -34,6 +35,12 @@
 		$thesubject = isset($_POST['thesubject']) ? $_POST['thesubject'] : $default_subject;
 		$themsg = $_POST['themsg'];
 		$thealias = isset($_POST['alias']) ? $_POST['alias'] : $default_name;
+	if (isset($_POST['theemail'],$_POST['thesubject'],$_POST['themsg'])) {
+		// get post data
+		$theemail = $_POST['theemail'];
+		$thesubject = $_POST['thesubject'];
+		$themsg = $_POST['themsg'];
+		$thealias = isset($_POST['alias']) ? isset($_POST['alias']) : $default_name;
 
 		// get saved data, if it exists
 		$thefile = 'feedbackdata.json';

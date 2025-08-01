@@ -47,6 +47,7 @@
 				</div>
 				<div class="input-holder">
 					<button class="themebtn themebg">start session</button>
+					<button class="themebtn themebg"><i class="fa fa-send"></i> send message</button>
 				</div>
 			</form>
 		</div>
@@ -91,6 +92,10 @@
                     </div>
                     <div>
                         <a href="mailto:${el.email}" class="w3-button themebtn">send reply</a>
+                        <p>what were they saying</p>
+                    </div>
+                    <div>
+                        <a href="mailto:${el.mail}" class="w3-button themebtn">send reply</a>
                     </div>
                 </div>
             </div>
@@ -105,6 +110,7 @@
     <footer>
         <div>
             &copy; Feedback recorder<br><br>
+            &copy; CoryG<br><br>
             <a href="../" class="themebtn" style="padding:8px 12px;">go back</a>
         </div>
     </footer>
