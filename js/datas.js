@@ -53,7 +53,7 @@ let projects = [
 		title: 'Thamani finance web app',
 		link: 'https://v0-thamani-web-app.vercel.app/',
 		cat: 'prototype',
-		isdone: true
+		isdone: false
 	},
 	{
 		img : 'project_2.png',
