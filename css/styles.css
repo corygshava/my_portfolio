@@ -243,6 +243,7 @@ nav a.active{
     width: 100%;
     padding: 20px;
     background-image: linear-gradient(180deg,transparent,var(--bodybg));
+    text-shadow: 0 0 8px var(--bg);
 }
 .project:hover{
     scale: 1.1;
@@ -250,6 +251,9 @@ nav a.active{
 }
 .project:hover .caption{
     opacity: 1;
+}
+.project:hover img{
+    filter: brightness(40%) blur(3px);
 }
 .project .pname{
     font-size: 1.35rem;

@@ -154,3 +154,8 @@ html{
     #log_guy{
         padding: 24px 32px;
     }
+
+    .theimg{
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }

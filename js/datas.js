@@ -1,6 +1,6 @@
 let projects = [
 	{
-		img : 'project_3.png',
+		img : 'project_consultancy.png',
 		title: 'Magnus Consultancy',
 		link: 'http://haoselkenya.com/pjs/cfw/consultancy_website/',
 		cat: 'personal',
@@ -21,42 +21,42 @@ let projects = [
 		isdone: true
 	},*/
 	{
-		img : 'project_1.png',
+		img : 'project_upremium.png',
 		title: 'Uploader Premium',
 		link: 'http://haoselkenya.com/pjs/cfw/uploader-premium/',
 		cat: 'personal',
 		isdone: true
 	},
 	{
-		img : 'project_1.png',
+		img : 'project_nima.png',
 		title: 'nima East Africa website',
 		link: 'http://nimaeastafrica.com/',
 		cat: 'complete',
 		isdone: true
 	},
 	{
-		img : 'project_1.png',
+		img : 'project_diamondeng.png',
 		title: 'Diamond engineering Kenya website redesign',
 		link: 'http://diamondeng.co.ke/newdesign/',
 		cat: 'complete',
 		isdone: true
 	},
 	{
-		img : 'project_1.png',
-		title: 'Haosel Kenya website',
+		img : 'project_haosel.png',
+		title: 'Haosel kenya website',
 		link: 'http://haoselkenya.com/',
-		cat: 'complete',
-		isdone: true
+		cat: 'ongoing',
+		isdone: false
 	},
 	{
-		img : 'project_2.png',
+		img : 'project_proto_thamani.png',
 		title: 'Thamani finance web app',
 		link: 'https://v0-thamani-web-app.vercel.app/',
 		cat: 'prototype',
 		isdone: false
 	},
 	{
-		img : 'project_2.png',
+		img : 'project_proto_uploader.png',
 		title: 'Upload manager prototype',
 		link: 'https://v0-simple-upload-manager.vercel.app/',
 		cat: 'prototype',
