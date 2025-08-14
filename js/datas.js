@@ -6,6 +6,13 @@ let projects = [
 		cat: 'personal',
 		isdone: true
 	},
+	{
+		img : 'project_inspyre.png',
+		title: 'Inspyre Website',
+		link: 'http://inspyre.haoselkenya.com/',
+		cat: 'personal',
+		isdone: true
+	},
 	/*{
 		img : 'project_6.png',
 		title: 'Ziga E-commerce',
