@@ -57,8 +57,8 @@ window.addEventListener('load', e => {
     mekVars();
     mekEvents();
 
-    renderProjects('#doneprojos','',true,3);
-    renderProjects('#ongoingprojos','',false,3);
+    renderProjects('#doneprojos','',true,6);
+    renderProjects('#ongoingprojos','',false,6);
     showprods('#tehtable');
 })
 
@@ -148,6 +148,8 @@ function renderProjects(where,type,isdone,limit) {
                 console.log("not done");
             }
         });
+
+        console.log(count,mylist);
 
         mylist.forEach(el => {
             thebox.innerHTML += `

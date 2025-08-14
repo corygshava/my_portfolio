@@ -13,6 +13,13 @@ let projects = [
 		cat: 'personal',
 		isdone: true
 	},
+	{
+		img : 'project_houseofjrm.png',
+		title: 'house of JRM',
+		link: 'http://houseofjrm.com/',
+		cat: 'personal',
+		isdone: true
+	},
 	/*{
 		img : 'project_6.png',
 		title: 'Ziga E-commerce',
@@ -80,6 +87,13 @@ let skills = [
 		img: `skill_1.png`
 	},
 	{
+		level: "proficient",
+		skillname: "GIT",
+		cat: "main",
+		desc: "this is a version control tool used by teams, individuals and organisations to monitor, update and keep track of changes in code.",
+		img: `git logo.png`
+	},
+	{
 		level: "Expert",
 		skillname: "CSS",
 		cat: "main",
@@ -105,7 +119,7 @@ let skills = [
 		skillname: "SQL",
 		cat: "main",
 		desc: "Used to query, update, and manage data stored in database systems like MySQL, PostgreSQL, and SQL Server. It allows developers to retrieve insights, build reports, and maintain structured data efficiently.",
-		img: `skill_2.png`
+		img: `sql logo.png`
 	},
 	{
 		level: "Intermediate",
