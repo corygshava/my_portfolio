@@ -5,9 +5,9 @@ body[data-mode="dark"]{
     --mode-darkerbg: #222;
     --mode-conbg: #444;
     --mode-shadow: rgba(0,0,0,0.5);
-    --mode-glass: rgba(33, 33, 33, 0.285);
+    --mode-glass: rgba(0, 0, 0, 0.785);
 
-    --bgimg: url('../images/hero_dark.png');
+    --bgimg: url('../images/herobg.webp');
 }
 body:not([data-mode="dark"]){
     --mode-bodybg: snow;

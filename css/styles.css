@@ -111,7 +111,7 @@ footer{
     height: 100%;
     position: absolute;
     z-index: 1;
-    background-color: var(--glass);
+    background-image: linear-gradient(to top,#000000aa,#00000077);
 }
 .hero .herotxt{
     text-align: center;

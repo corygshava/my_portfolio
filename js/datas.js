@@ -1,6 +1,6 @@
 let projects = [
 	{
-		img : 'project_consultancy.png',
+		img : 'project_consultancy.webp',
 		title: 'Magnus Consultancy',
 		link: 'http://haoselkenya.com/pjs/cfw/consultancy_website/',
 		cat: 'personal',
@@ -14,7 +14,7 @@ let projects = [
 		isdone: true
 	},
 	{
-		img : 'project_houseofjrm.png',
+		img : 'project_houseofjrm.webp',
 		title: 'house of JRM',
 		link: 'http://houseofjrm.com/',
 		cat: 'personal',
@@ -33,6 +33,13 @@ let projects = [
 		link: '/foodacious/',
 		cat: 'personal',
 		isdone: true
+	},*
+	{
+		img : 'project_nima.png',
+		title: 'nima East Africa website',
+		link: 'http://nimaeastafrica.com/',
+		cat: 'complete',
+		isdone: true
 	},*/
 	{
 		img : 'project_upremium.png',
@@ -42,25 +49,25 @@ let projects = [
 		isdone: true
 	},
 	{
-		img : 'project_nima.png',
-		title: 'nima East Africa website',
-		link: 'http://nimaeastafrica.com/',
-		cat: 'complete',
-		isdone: true
-	},
-	{
-		img : 'project_diamondeng.png',
+		img : 'project_diamondeng.webp',
 		title: 'Diamond engineering Kenya website redesign',
 		link: 'http://diamondeng.co.ke/newdesign/',
 		cat: 'complete',
 		isdone: true
 	},
 	{
-		img : 'project_haosel.png',
+		img : 'project_haosel.webp',
 		title: 'Haosel kenya website',
 		link: 'http://haoselkenya.com/',
 		cat: 'ongoing',
 		isdone: false
+	},
+	{
+		img : 'project_destinybaraka.webp',
+		title: 'Destiny Baraka House',
+		link: 'http://destinybarakahouse.org/',
+		cat: 'complete',
+		isdone: true
 	},
 	{
 		img : 'project_proto_thamani.png',
