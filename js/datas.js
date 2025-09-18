@@ -2,7 +2,7 @@ let projects = [
 	{
 		img : 'project_consultancy.webp',
 		title: 'Magnus Consultancy',
-		link: 'http://haoselkenya.com/pjs/cfw/consultancy_website/',
+		link: 'http://haoselkenya.com/pjs/cfw/consultancy_website',
 		cat: 'personal',
 		isdone: true
 	},
@@ -56,7 +56,7 @@ let projects = [
 		isdone: true
 	},
 	{
-		img : 'project_haosel.webp',
+		img : 'project_haosel.v0-thamani-web-app',
 		title: 'Haosel kenya website',
 		link: 'http://haoselkenya.com/',
 		cat: 'ongoing',
